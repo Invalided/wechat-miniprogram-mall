@@ -1,0 +1,29 @@
+.textStr{
+  float: left;
+}
+.content{
+  width: 90%;
+  margin: 20px auto;
+}
+.td{
+  text-align-last: justify;
+  height: 22.3px;
+  margin:5px 8px;
+
+}
+input{
+  border-bottom: 1px solid black;
+  margin-top: 8px;
+}
+.input{
+  margin: 20px auto; 
+}
+.register{
+  background-color:#0099CC;
+  opacity: 0.8;
+  color:white;
+  margin: 40px auto;
+}
+title{
+  font-size:30px；
+}

@@ -1,0 +1,34 @@
+.demo{
+  display: flex;
+  flex-direction: row;
+  height: 240rpx;
+  margin: 20rpx;
+}
+#sellimg{
+  width: 50rpx;
+  height: 50rpx;
+}
+.sellimg{
+  text-align: right;
+}
+#shopimg,.img{
+  width: 240rpx;
+  height: 240rpx;
+  border-radius: 18rpx;
+}
+.shoplist{
+  width: 60%;
+  padding: 10rpx;
+  margin: 10rpx;
+}
+.detailPrice{
+  margin-top: 40rpx;
+}
+.currency{
+  color: orange;
+  font-size: 30rpx;
+}
+.price{
+  color: orange;
+  font-size: 40rpx;
+}

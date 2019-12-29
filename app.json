@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/shoplist/shoplist",
+    "pages/shopmain/shopmain",
+    "pages/shopset/shopset",
+    "pages/register/register",
+    "pages/shopbuy/shopbuy",
+    "pages/resetPwd/resetPWd",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a1a1a1",
+    "selectedColor": "#2af8ff",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/shopmain/shopmain",
+        "iconPath": "assets/icons/hema.png",
+        "selectedIconPath": "assets/icons/hema-sel.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/shoplist/shoplist",
+        "iconPath": "./assets/icons/sort.png",
+        "selectedIconPath": "./assets/icons/sort-sel.png",
+        "text": "商品"
+      },
+      {
+        "pagePath": "pages/shopbuy/shopbuy",
+        "iconPath": "./assets/icons/shopping.png",
+        "selectedIconPath": "./assets/icons/shopping-sel.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/shopset/shopset",
+        "iconPath": "./assets/icons/mine.png",
+        "selectedIconPath": "./assets/icons/mine-sel.png",
+        "text": "我的"
+      }
+    ]
+  },
+  
+  "sitemapLocation": "sitemap.json"
+}

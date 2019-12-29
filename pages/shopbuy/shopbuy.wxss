@@ -1,0 +1,128 @@
+page{
+  /* background-color: gainsboro; */
+  background-image: linear-gradient(#FFFAFA,#EAEAEA);
+}
+.buyList{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  /* justify-content: space-around; */
+  height: 240rpx;
+  /* border: 1px solid black; */
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  /* padding: 10px; */
+  margin: 20rpx 10rpx;
+}
+image{
+  width: 240rpx;
+  height: 240rpx;
+  
+}
+.img{
+  /* border: 1px solid red; */
+  width: 240rpx;
+  border-radius: 15px;
+  /* margin: 0 10px; */
+  
+}
+
+.textStr{
+  text-align-last:justify;
+  margin: 5px auto;
+}
+.infos{
+  margin: 5px auto;
+  
+}
+
+.sumPrice{
+  width: 100%;
+  border: 0.5px solid #EDEDED;
+  bottom: 1px;
+  padding: 10px;
+  position: fixed;
+  background-color: white;
+  
+}
+.priceTag{
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  text-align: right;
+
+}
+.priceTag view{
+  width: 30%;
+  display:inline-block;
+}
+.right{
+  text-align: right;
+}
+.priceStr{
+  display: inline;
+  margin: 0 5px;
+}
+.listStr{
+  margin: 25rpx;
+  /* width: 70%; */
+  /* width: 30%; */
+}
+
+.list-title{
+  display: flex;
+flex-flow:row;
+}
+.list-title view{
+width:50%;
+display:inline-block;
+}
+.right{
+  text-align:center;
+  padding-right:30rpx;
+
+}
+.left{
+  padding: 10px;
+}
+.payBtn{
+  text-align: center;
+  background-color: #EE7553;
+  border-radius: 20px;
+  color: white;
+  padding: 10px;
+}
+.scroll{
+  margin-bottom: 60px;
+}
+.select{
+  display: inline-block;
+  /* font-size: 20px; */
+  width: 60rpx;
+  text-align: center;
+  
+}
+.sub{
+  border: 1px solid gray;
+  border-radius: 5px 0 0 5px;
+}
+.add{
+  border: 1px solid gray;
+  border-radius: 0 5px 5px 0;
+}
+.input{
+  /* color:transparent;
+  text-shadow: 0 0 0 red; */
+  border-top: 1px gray solid;
+  border-bottom: 1px gray solid;
+  width: 30px;
+  padding: 1px;
+  text-align: center;
+}
+#inputs{
+  display: flex;
+  flex-direction: row; 
+  /* border: 1px solid red; */
+  justify-content: center;
+  /* width: 75px; */
+}

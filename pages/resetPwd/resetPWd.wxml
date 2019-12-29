@@ -1,0 +1,18 @@
+<view class="content">
+  <form bindsubmit="reset">
+   <view class="inputs">
+      <view class="input">
+        <input type="text" bindblur="usercheck" placeholder="旧密码" name = "oldPwd" value="{{str}}"></input>
+      </view>
+      <view class="input">
+        <input type="password"  name = "userPwd" value="{{str}}" placeholder="新密码"></input>
+      </view>
+      <view class="input">
+        <input type="password" name = "conPwd" value="{{str}}" placeholder="确认密码"></input>
+      </view>  
+   </view>
+   <view>
+    <button form-type="submit" class="register">修改密码</button>
+   </view>
+  </form>
+</view>

@@ -1,0 +1,25 @@
+<view id="content">
+  <scroll-view scroll-y="true"  class = "scroll" >
+    <view wx:for="{{shopList}}" wx:key = "index" class="box">
+      <view class="demo">
+        <view class="img" style="background-color:rgba{{arrayColor[index]}}">
+          <image src="/assets/images/{{item.spath}}" id="shopimg"></image>
+        </view>
+        <view class="shoplist" >
+          <view class="textStr">
+            <text>{{item.sname}}</text>
+          </view>
+          <view class="detailPrice">
+            <text class="currency">￥</text>
+            <text class="price">{{item.sprice}}</text>
+          </view>
+          <view bindtap="buyShop" data-sprice="{{item.sid}},{{item.sprice}},{{item.spath}},{{item.sname}}" class="sellimg">
+            <image src="/assets/icons/shopping-sel.png" id="sellimg"></image>
+          </view>
+      </view>
+    </view>
+    </view>
+    
+    
+  </scroll-view>
+</view>

@@ -1,0 +1,49 @@
+page{
+
+  background-color: #EAEAEA;
+}
+image{
+  height: 150px;
+  width: 100%;
+}
+
+.images{
+  display: flex;
+  flex-direction: row;
+  background-color:#F5F5F5;
+  border-radius: 10px 10px 0 0;
+}
+.listTitle{
+  text-align: center;
+  line-height: 40px;
+  margin: 2px;
+  background-color: white;
+}
+.detailStr{
+  /* border: 1px red solid; */
+  border-radius: 0 0 10px 10px;
+  background-color: white;
+  padding: 5px;
+}
+.single{
+  /* border: 1px solid black; */
+  width: 47.5%;
+  text-align:  center;
+  /* padding:10px; */
+  border-radius: 5px;
+  margin: 3px 4px;
+  /* margin: 5px 2px; */
+
+}
+.left{
+  float: left;
+  margin-left: 4px;
+}
+.right{
+  float: right;
+  margin-right: 4px;
+}
+.price{
+  color: orange;
+  text-align: left;
+}

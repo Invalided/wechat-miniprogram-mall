@@ -1,0 +1,52 @@
+<view id="content">
+<view class = "scroll">
+<scroll-view scroll-y="true"  >
+  <view  wx:for="{{buyList}}" wx:key = "index">
+    <view class="buyList">
+      <view class="img" style="background-color:rgba{{arrayColor[index]}}">
+        <image src="/assets/images/{{item.spath}}"></image>
+      </view>
+      <view class="listStr">
+          <view class="textStr">
+            <text>商品名称</text>
+          </view>
+          <view class="textStr">
+            <text>购买数量</text>
+          </view>
+          <view class="textStr">
+            <text>小计</text>
+          </view>
+      </view>
+      <view class="listStr">
+        <view class="infos">
+            <text>{{item.sname}}</text>
+        </view>
+        <view class="infos" id="inputs">
+            <text class="select sub" bindtap="sub" data-value="{{index}}">－</text>
+            <!-- <text class="select">{{item.amount}}</text> -->
+            <input type="number" class="input" value="{{item.amount}}"  bindfocus="focusInput" 
+            bindblur="blurInput" bindinput="getInput" data-value="{{index}}">
+            </input>
+            <text class="select add" bindtap="add" data-value="{{index}}">＋</text>
+        </view>
+        <view class="infos">
+            <text>{{item.subtotal}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+</view>
+  <view class="sumPrice">
+    <view class="list-title">
+      <view class="left">
+        <text>合计:￥{{sumPrice}}</text>
+      </view>
+      <view class="right">
+        <view class="payBtn">
+          <text >结算</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

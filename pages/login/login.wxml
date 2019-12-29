@@ -1,0 +1,25 @@
+<view>
+  <view class="logo">
+    <image src="/assets/images/logo.jpg" class="img"></image>
+  </view>
+  <form bindsubmit="dologin" class="main">
+    <view class="content">
+    <view class="input">
+          <input type="text" name = "userName" placeholder="用户名" value = "{{inputStr}}"></input>
+     </view>
+     <view class="input">
+          <input type="password" name = "userPwd" placeholder="密码" value = "{{inputStr}}"></input>
+     </view>
+      <view class="btns">
+        <view class="btn">
+          <button class="login" form-type="submit">登录</button>
+        </view>
+        <view class="btn">
+          <button class="register" bindtap="doreg" type="primary">注册</button>
+        </view>
+      
+      </view>
+  
+    </view>
+  </form>
+</view>

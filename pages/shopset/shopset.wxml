@@ -1,0 +1,27 @@
+<view class="content">
+  <view class="users">
+    <view id = "userImg">
+      <image src="/assets/images/userImg.jpg"></image>
+    </view>
+    <view id="userName">
+      <text>{{userName}}</text>
+    </view>
+  </view>
+  <view class="list">
+      <view class="selects">
+        订单中心
+      </view>
+      <view class="selects">
+        优惠卡券
+      </view>
+      <view class="selects">
+        会员中心
+      </view>
+      <view class="selects" bindtap="doreset">
+        修改密码
+      </view>
+      <view class="selects" bindtap="doquit">
+        退出登录
+      </view>
+  </view>
+</view>

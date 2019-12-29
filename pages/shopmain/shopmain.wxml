@@ -1,0 +1,47 @@
+<view >
+<swiper class="img" autoplay="true" interval="2000" indicator-dots="true" indicator-color="red" indicator-active-color="white" bindchange="itemchange" data-simple="this.current" >
+<view>
+    <swiper-item wx:for="{{images}}" wx:key="index">
+        <image src="/assets/nav/{{item.imgsource}}"></image>
+    </swiper-item>
+  </view>
+</swiper>
+<view class="nav">
+
+</view>
+<view class="shopList">
+  <view class="listTitle">
+    今日特价
+  </view>
+  <view class="detailList" wx:for="{{showList}}" wx:key = "index">
+    <view wx:if = "{{index%2==0}}" class="single left" >
+        <view class="images" style="background-color:rgba{{colorArr[index]}}">
+          <image src="/assets/images/{{item.spath}}" ></image>
+        </view>
+        <view class="detailStr">
+          <view>
+            {{item.sname}}
+          </view>
+          <view class="price">
+            ￥{{item.sprice}}
+          </view>
+        </view>
+    </view>
+    <view  wx:if = "{{index%2!=0}}" class="single right" >
+        <view class="images" style="background-color:rgba{{colorArr[index]}}">
+          <image src="/assets/images/{{item.spath}}"></image>
+        </view>
+        <view class="detailStr">
+          <view>
+            {{item.sname}}
+          </view>
+          <view class="price">
+            ￥{{item.sprice}}
+          </view>
+        </view>
+        
+    </view>
+  </view>
+  
+</view>
+</view>
